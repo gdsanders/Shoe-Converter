@@ -11,14 +11,10 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var mensLabel: UILabel!
-    
     @IBOutlet weak var mensTextField: UITextField!
-    
     
     @IBOutlet weak var womensLabel: UILabel!
     @IBOutlet weak var womensTextField: UITextField!
-    
-    
     
 
     override func viewDidLoad() {
@@ -32,6 +28,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func mensButtonPressed(sender: UIButton) {
+        let sizeFromTextField = Int(mensTextField.text!)!
+        let conversionConstant = 30
+        let convertedSize = sizeFromTextField + conversionConstant
+        mensLabel.text = "European Men's Size is \(convertedSize)"
         
     }
     
