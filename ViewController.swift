@@ -9,6 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var mensLabel: UILabel!
+    
+    @IBOutlet weak var mensTextField: UITextField!
+    
+    
+    @IBOutlet weak var womensLabel: UILabel!
+    @IBOutlet weak var womensTextField: UITextField!
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +30,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func mensButtonPressed(sender: UIButton) {
+        
+    }
+    
+    
+    @IBAction func womensButtonPressed(sender: UIButton) {
+        
+    }
+    
 
 
 }

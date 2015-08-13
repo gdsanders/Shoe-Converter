@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Women's Shoe Conversion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCc-uv-WnW">
-                                <rect key="frame" x="20" y="166" width="205" height="21"/>
+                                <rect key="frame" x="20" y="175" width="205" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -34,27 +34,39 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6gW-9W-9Ak">
-                                <rect key="frame" x="20" y="187" width="205" height="30"/>
+                                <rect key="frame" x="20" y="196" width="205" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lda-gE-QJ5">
                                 <rect key="frame" x="31" y="87" width="158" height="48"/>
                                 <state key="normal" image="convertButton"/>
+                                <connections>
+                                    <action selector="mensButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ndd-0u-RWr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbP-CF-S0d">
+                                <rect key="frame" x="31" y="234" width="158" height="48"/>
+                                <state key="normal" image="convertButton"/>
+                                <connections>
+                                    <action selector="womensButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SKT-Ib-d3P"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Men's shoe sizes are entered as whole sizes.  Women's shoes can be entered as half sizes." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIq-eS-0zZ">
-                                <rect key="frame" x="20" y="274" width="240" height="115"/>
+                                <rect key="frame" x="20" y="314" width="240" height="115"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbP-CF-S0d">
-                                <rect key="frame" x="31" y="225" width="158" height="48"/>
-                                <state key="normal" image="convertButton"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="mensLabel" destination="rYv-U3-DSc" id="mDN-cF-ZS3"/>
+                        <outlet property="mensTextField" destination="B3c-EP-neH" id="DYe-tY-NC3"/>
+                        <outlet property="womensLabel" destination="wCc-uv-WnW" id="uN9-9v-FmY"/>
+                        <outlet property="womensTextField" destination="6gW-9W-9Ak" id="ZbQ-yx-gyd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
